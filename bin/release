@@ -3,6 +3,10 @@
 
 cat <<EOF
 ---
+config_vars:
+  APP_LOG_FILE: /app/apache/logs/app_log
+  LD_LIBRARY_PATH: /app/php/ext
+  PATH: /app/php/bin:/usr/local/bin:/usr/bin:/bin
 default_process_types:
   web: sh boot.sh
 EOF
